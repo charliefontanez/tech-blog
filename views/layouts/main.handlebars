@@ -15,15 +15,15 @@
     <header>
       <nav>
         <a href="/">Home</a>
-        {{#if loggedIn}}
         <a href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
         <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
       </nav>
       <h1>
-        <a href="/">Tech Blog</a>
+        The Tech Blog
       </h1>
     </header>
     <main>

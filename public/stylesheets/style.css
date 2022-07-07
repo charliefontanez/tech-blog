@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body, html {
+  background-color: rgb(218, 233, 211);
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgb(35, 16, 16);
+  color:rgb(218, 233, 211);
+  height: 100px;
+}
+
+header nav {
+  margin-left: 10px;
+}
+
+header h1 {
+  padding: 5px;
+  margin-left: 10px;
+  color: rgb(35, 16, 16);
+  background-color:rgb(218, 233, 211);
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 5px 5px white;
+}
+
+nav {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(218, 233, 211);
+  padding: 10px;
+}
