@@ -38,3 +38,7 @@ a {
   color: rgb(218, 233, 211);
   padding: 10px;
 }
+
+li {
+  list-style: none;
+}
