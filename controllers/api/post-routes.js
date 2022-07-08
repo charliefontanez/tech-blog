@@ -88,7 +88,7 @@ router.put('/:id', (req, res) => {
 router.post('/', (req, res) => {
   Post.create({
     title: req.body.title,
-    contents: req.body.contents,
+    content: req.body.content,
     user_id: req.body.user_id
     // change user id later to user session id
   })
