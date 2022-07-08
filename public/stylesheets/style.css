@@ -33,7 +33,7 @@ nav {
   padding: 10px;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: rgb(218, 233, 211);
   padding: 10px;
@@ -41,4 +41,10 @@ a {
 
 li {
   list-style: none;
+  color: black;
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
 }
