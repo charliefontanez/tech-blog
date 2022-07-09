@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     attributes: [
       'id',
       'title',
-      'contents',
+      'content',
       'created_at'
     ],
     include: [
@@ -36,7 +36,7 @@ router.get('/:id', (req, res) => {
     attributes: [
       'id',
       'title',
-      'contents',
+      'content',
       'created_at'
     ],
     include: [
