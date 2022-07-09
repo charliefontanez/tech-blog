@@ -54,14 +54,19 @@ li {
   color: black;
 }
 
-.post {
+.post-list {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post-item {
   border: 5px solid rgb(35, 16, 16);
   color: grey;
   text-decoration: none;
   margin: 5px auto 5px auto;
 }
 
-.post a {
+.post-item a {
   text-decoration: none;
 }
 
