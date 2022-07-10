@@ -20,11 +20,18 @@
         <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
         <a href="/login">Login</a>
+        <button id="logout" class="btn-no-style">Logout</button>
         {{/if}}
       </nav>
+      {{#if isDashboard}}
+      <h1>
+        Your Dashboard
+      </h1>
+      {{else}}
       <h1>
         The Tech Blog
       </h1>
+      {{/if}}
     </header>
     <main>
       {{{ body }}}

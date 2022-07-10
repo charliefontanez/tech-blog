@@ -1,0 +1,20 @@
+{{#if posts.length}}
+  <ol class="post-list">
+    {{#each posts as |post|}}
+      <li>
+      {{> post-info post}}
+      </li>
+    {{/each}}
+  </ol>
+{{/if}}
+
+<div class="btn-container">
+  <button type="button" class="btn">+ Post</button>
+</div>
+
+<style>
+  .btn-container {
+    width: 100%;
+    text-align: center;
+  }
+</style>
