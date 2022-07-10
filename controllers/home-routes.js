@@ -36,14 +36,10 @@ router.get('/', (req, res) => {
   })
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
-      console.log(posts);
-
-      posts.forEach((post) => {
-        post.created_at = moment(post.created_at).format('m/d/yyyy');
-      });
-
+      
       res.render('homepage', {
-        posts
+        posts,
+        loggedIn: req.session.loggedIn
       });
     })
     .catch(err => {
