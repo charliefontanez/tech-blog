@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { User, Post, Comment } = require('../models');
-
+var moment = require("moment");
 
 router.get('/', (req, res) => {
   Post.findAll({
@@ -37,6 +37,11 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
       console.log(posts);
+
+      posts.forEach((post) => {
+        post.created_at = moment(post.created_at).format('m/d/yyyy');
+      });
+
       res.render('homepage', {
         posts
       });
@@ -45,6 +50,14 @@ router.get('/', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('login');
 });
 
 module.exports = router;
