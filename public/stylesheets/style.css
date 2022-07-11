@@ -75,16 +75,20 @@ ol {
 .new-post-form {
   margin-top: 25px;
   margin-bottom: 25px;
-  width: inherit;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 #title-input {
   height: 30px;
   border-radius: 3px;
+  padding: 10px;
 }
 
-.new-post-form input {
-  /* width: 70vw; */
+.new-post-form input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 li {
@@ -150,10 +154,18 @@ form > div {
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: 200px;
+  bottom: 20%;
 }
 
-.btn-container > button {
+.btn-container-rel {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  /* left: 50%; */
+}
+
+.new-post-btn {
   font-size: 25px;
   padding-left: 12px;
   padding-right: 12px;
@@ -162,6 +174,13 @@ form > div {
   background-color: rgb(35, 16, 16);
   color: rgb(218, 233, 211);
   border-radius: 5px;
+}
+
+.new-post-form button {
+  margin: 0;
+  position: relative;
+  left: 47%;
+
 }
 
 .hide {
