@@ -22,7 +22,7 @@ async function createPost(event) {
     });
 
     if (response.ok) {
-      console.log('post created'0;)
+      console.log('post created');
       document.location.replace('/dashboard');
     }
     else {
